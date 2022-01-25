@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack 21</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="divLogo">
+        <img  id="logo" src="./images/logo.png" alt="No image">
+    </div>
+    
+    <div class="row mt-2">
+        <div id="divbtn" class="col text-center">
+            <button id= "btnNewGame" class="btn btn-primary">New game</button> 
+            <button id= "btnGetCard" class="btn btn-secondary" disabled= "disabled" >Get Card</button> 
+            <button id= "btnStop" class="btn btn-danger" disabled= "disabled"> Stop</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h1>Tony - <small>0</small></h1>
+            <div id="player-cards" class="divCartas">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h1>Computer - <small>0</small></h1>
+            <div id="computer-cards" class="divCartas">
+    
+            </div>
+        </div>
+    </div>
+
+<script src="./js/underscore-min.js"></script>
+<script src="./js/juego-min.js"></script>
+<script>
+    console.log(miModulo);
+    miModulo.nuevoJuego();
+</script>
+</body>
+</html>
